@@ -1,0 +1,113 @@
+
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero__heading {
+    position: relative;
+    /* left: -100%; */
+    /* background-color: red; */
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: #fff;
+    animation: hero 2s 200ms linear;
+}
+
+@keyframes hero {
+
+    /* 0 is loading fist */
+    0% {
+        /* left: -100%; */
+        /* visibility: hidden; */
+        opacity: 0;
+    }
+
+    100% {
+        /* left: 0; */
+        /* visibility: visible; */
+        opacity: 100%;
+    }
+}
+
+.hero__heading span {
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right,
+            #ff6a00,
+            #ee0979);
+    background: linear-gradient(to right,
+            #ff6a00,
+            #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.shundor {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__description {
+    /* background: red; */
+    position: relative;
+    font-size: 60px;
+    background: #da22ff;
+    background: -webkit-linear-gradient(to right,
+            #9114ff,
+            #da22ff);
+    background: linear-gradient(to right,
+            #8f0eff,
+            #da22ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation: unlimited .5s linear;
+}
+
+/* @keyframes unlimited {
+    0%{
+        opacity: 20%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 20%;
+    }
+} */
+@keyframes unlimited {
+    0% {
+        top: 100px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.highlight {
+    border-bottom: 4px solid rgb(132, 0, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .hero__heading {
+        font-size: 60px;
+    }
+
+    .hero__description {
+        font-size: 40px;
+    }
+}
